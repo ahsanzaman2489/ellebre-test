@@ -1,0 +1,39 @@
+// @ts-nocheck
+/* eslint-disable */
+/* tslint:disable */
+/* prettier-ignore-start */
+import React from "react";
+import { classNames } from "@plasmicapp/react-web";
+
+export type Icon2IconProps = React.ComponentProps<"svg"> & {
+  title?: string;
+};
+
+export function Icon2Icon(props: Icon2IconProps) {
+  const { className, style, title, ...restProps } = props;
+  return (
+    <svg
+      xmlns={"http://www.w3.org/2000/svg"}
+      fill={"none"}
+      viewBox={"0 0 16 18"}
+      height={"1em"}
+      className={classNames("plasmic-default__svg", className)}
+      style={style}
+      {...restProps}
+    >
+      {title && <title>{title}</title>}
+
+      <path
+        d={
+          "M5.425 10.112l5.407 3.15m-.007-8.692l-5.4 3.151m9.825-4.346a2.375 2.375 0 11-4.75 0 2.375 2.375 0 014.75 0zm-9.5 5.542a2.375 2.375 0 11-4.75 0 2.375 2.375 0 014.75 0zm9.5 5.541a2.375 2.375 0 11-4.75 0 2.375 2.375 0 014.75 0z"
+        }
+        stroke={"currentColor"}
+        strokeLinecap={"round"}
+        strokeLinejoin={"round"}
+      ></path>
+    </svg>
+  );
+}
+
+export default Icon2Icon;
+/* prettier-ignore-end */
